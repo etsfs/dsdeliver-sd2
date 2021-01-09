@@ -36,6 +36,7 @@ public class OrderDTO implements Serializable{
 		this.longitude = longitude;
 		this.moment = moment;
 		this.status = status;
+		
 	}
 	
 	public OrderDTO(Order entity) {
@@ -56,26 +57,57 @@ public class OrderDTO implements Serializable{
 		return id;
 	}
 
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getAddress() {
 		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public Double getLatitude() {
 		return latitude;
 	}
 
+	public void setLatitude(Double latitude) {
+		this.latitude = latitude;
+	}
+
 	public Double getLongitude() {
 		return longitude;
+	}
+
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
 	}
 
 	public Instant getMoment() {
 		return moment;
 	}
 
+	public void setMoment(Instant moment) {
+		this.moment = moment;
+	}
+
 	public OrderStatus getStatus() {
 		return status;
 	}
 
+	public void setStatus(OrderStatus status) {
+		this.status = status;
+	}
+
+	public List<ProductDTO> getProducts() {
+		return products;
+	}
+
+
+
+	
 
 	
 	
